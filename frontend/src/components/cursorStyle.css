@@ -1,0 +1,17 @@
+
+/* Style for remote cursors */
+.remote-cursor- {
+    position: absolute;
+    width: 2px;
+    background: rgba(255, 0, 0, 0.8); /* Red cursor, adjust color as needed */
+    z-index: 1000;
+}
+
+/* Optional: Different colors for different users */
+.remote-cursor-1 {
+    background: rgba(255, 0, 0, 0.8); /* Red */
+}
+
+.remote-cursor-2 {
+    background: rgba(0, 255, 0, 0.8); /* Green */
+}

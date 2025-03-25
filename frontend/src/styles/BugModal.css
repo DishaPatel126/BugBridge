@@ -1,0 +1,54 @@
+/* Overlay to cover the entire screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal box */
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Modal buttons */
+.modal button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 80px;
+}
+
+/* Green Yes button */
+.modal button:first-of-type {
+    background: #28a745;
+    color: white;
+}
+
+.modal button:first-of-type:hover {
+    background: #218838;
+}
+
+/* Red No button */
+.modal button:last-of-type {
+    background: #dc3545;
+    color: white;
+}
+
+.modal button:last-of-type:hover {
+    background: #c82333;
+}

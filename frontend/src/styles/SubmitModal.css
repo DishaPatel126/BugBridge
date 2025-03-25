@@ -1,0 +1,159 @@
+/* Overlay covering the screen */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal container */
+.modal {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Modal header */
+.modal h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+/* Description input */
+.modal textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.modal textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* File upload */
+.modal input[type="file"] {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Code preview section */
+.modal .code-preview {
+    background: #f9fafb;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+    max-height: 200px;
+    border: 1px solid #ddd;
+}
+
+/* Buttons container */
+.modal .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Submit button */
+.modal button.submit {
+    background: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.modal button.submit:hover {
+    background: #1e4bbb;
+}
+
+/* Cancel button */
+.modal button.cancel {
+    background: #f3f4f6;
+    color: #333;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modal button.cancel:hover {
+    background: #e5e7eb;
+}
+.edit-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.tabs {
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.tab-content {
+    margin-top: 10px;
+}
+
+.tab-pane {
+    display: none;
+}   
+
+.tab-pane.active {
+    display: block;
+}
+
+.description-content, .sample-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
