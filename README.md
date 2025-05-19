@@ -1,7 +1,7 @@
 
-# BugBoard
+# BugBridge
 
-**BugBoard** is a collaborative platform for reporting software bugs, submitting solutions, and engaging in real-time coding sessions to debug issues efficiently, developed as part of **CSCI 5308 - Advanced Topics in Software Development** at Dalhousie University. It enables developers to work together, share insights, and resolve problems faster. This React-based frontend interfaces with our Spring Boot backend to provide a seamless user experience for bug tracking and resolution.
+**BugBridge** is a collaborative platform for reporting software bugs, submitting solutions, and engaging in real-time coding sessions to debug issues efficiently, developed as part of **CSCI 5308 - Advanced Topics in Software Development** at Dalhousie University. It enables developers to work together, share insights, and resolve problems faster. This React-based frontend interfaces with our Spring Boot backend to provide a seamless user experience for bug tracking and resolution.
 
 ---
 
@@ -97,7 +97,7 @@
 1. Clone the repository:
    ```bash
    git clone https://git.cs.dal.ca/courses/2025-winter/csci-5308/group08
-   cd bugboard/frontend
+   cd BugBridge/frontend
    ```
 #### Backend Setup
 
